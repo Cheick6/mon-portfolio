@@ -231,7 +231,7 @@ const Portfolio = () => {
       type: "Développement Web",
       description: "Création et évolution de mon portfolio, passant du HTML/CSS pur à une application React moderne, interactive et animée.",
       tags: ["React", "Tailwind", "Design", "Animations"],
-      link: "#"
+      link: "https://github.com/Cheick6/mon-portfolio.git"
     }
   ];
 
