@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=fr/accueil.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24h INFO - Redirect</title>
+    <script>
+        // Redirection automatique selon la langue du navigateur
+        window.onload = function() {
+            var lang = navigator.language || navigator.userLanguage;
+            if (lang.startsWith('fr')) {
+                window.location.href = "fr/accueil.html";
+            } else {
+                window.location.href = "en/accueil.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, choose your language:</p>
+    <ul>
+        <li><a href="fr/accueil.html">Français</a></li>
+        <li><a href="en/accueil.html">English</a></li>
+    </ul>
+</body>
+</html>
