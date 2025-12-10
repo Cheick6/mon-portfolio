@@ -536,7 +536,9 @@ const Portfolio = () => {
                       </div>
                       {project.link !== "#" ? (
                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cyan-500 font-bold hover:underline transition-all transform hover:translate-x-2">
-                          Voir le code <ExternalLink size={16} />
+                          {/* Si le projet est celui des 24H, on écrit "Visiter le site", sinon "Voir le code" */}
+                          {project.title.includes("24H") ? "Visiter le site" : "Voir le code"} 
+                          <ExternalLink size={16} />
                         </a>
                       ) : (
                         <span className={`${theme.textMuted} text-sm italic`}>Code non public</span>
