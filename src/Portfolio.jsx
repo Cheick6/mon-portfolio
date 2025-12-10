@@ -216,8 +216,7 @@ const Portfolio = () => {
       type: "Hackathon / Événementiel",
       description: "Coordination d'un hackathon national. Gestion de la logistique, communication, et distribution des ressources. Expérience de leadership et gestion de crise.",
       tags: ["Leadership", "Organisation", "Logistique"],
-      // Ajout du "/" au début pour que React cherche dans le dossier public
-      link: "/24h_Info-main/index.html" 
+      link: process.env.PUBLIC_URL + "/24h_Info-main/index.html"
     },
     {
       title: "Site Vitrine Client",
