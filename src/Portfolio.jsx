@@ -336,10 +336,10 @@ const DATA = {
   photos: [
     { src: `${PUB}/images/usts_1.jpg`, caption: 'Développement d\'applications IA — USTS Caraïbes', tag: 'Stage USTS · Mars 2026' },
     { src: `${PUB}/images/usts_2.jpg`, caption: 'Une journée productive au bureau — concentration et rigueur', tag: 'Stage USTS · Mars 2026' },
-    { src: `${PUB}/images/usts_3.jpg`, caption: 'Architecture logicielle : Symfony, Angular, n8n', tag: 'Stage USTS · Mars 2026' },
+    { src: `${PUB}/images/usts_3.jpg`, caption: 'Développement d\'applications IA — USTS Caraïbes', tag: 'Stage USTS · Mars 2026' },
     { src: `${PUB}/images/usts_4.jpg`, caption: 'Portrait — quartier Paris 13e, pendant le stage', tag: 'Stage USTS · Mars 2026' },
-    { src: `${PUB}/images/usts_5.jpg`, caption: 'En collaboration avec l\'équipe technique USTS', tag: 'Stage USTS · Mars 2026' },
-    { src: `${PUB}/images/usts_6.jpg`, caption: 'Après une session de développement réussie', tag: 'Stage USTS · Mars 2026' },
+    { src: `${PUB}/images/usts_5.jpg`, caption: 'Shooting professionnel — USTS Caraïbes, avril 2026', tag: 'Stage USTS · Mars 2026' },
+    { src: `${PUB}/images/usts_6.jpg`, caption: 'Shooting professionnel — USTS Caraïbes, avril 2026', tag: 'Stage USTS · Mars 2026' },
     { src: `${PUB}/images/usts_7.jpg`, caption: 'Shooting professionnel — USTS Caraïbes, avril 2026', tag: 'Stage USTS · Avril 2026' },
     { src: `${PUB}/images/usts_8.jpg`, caption: 'Stage développeur d\'application IA — Paris 13e', tag: 'Stage USTS · Avril 2026' },
     { src: `${PUB}/images/cnam_1.jpg`, caption: 'Visite du musée des Arts et Métiers — Conservatoire national des arts et métiers, Paris', tag: 'Musée du Conservatoire national des arts et métiers · BUT Informatique' },
