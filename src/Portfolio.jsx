@@ -13,33 +13,33 @@ const DATA = {
   alternance: "En recherche d'alternance — Ingénieur Informatique au Conservatoire national des arts et métiers — Début sept. 2026",
   conclusion: {
     forts: [
-      "Vision fullstack complète — du modèle de données à l'interface utilisateur, en passant par le déploiement",
-      "Autonomie confirmée en conditions réelles : missions en production dès les premières semaines de stage",
-      "Polyvalence technique : web, mobile (Flutter, Ionic), IA (n8n, MCP), bases de données (SQL, NoSQL), déploiement (Docker, Coolify)",
-      "Capacité d'adaptation à des contextes très différents : équipe étudiante, startup, agence digitale, grand groupe bancaire",
-      "Sens du projet : toujours garder le besoin réel au centre, que ce soit le client ou l'utilisateur final",
+      "Vision fullstack complète. En partant du modèle de données et l'interface utilisateur sans oublier le déploiement",
+      "Autonomie confirmée dans un environnement professsionel. Avec des missions en production dès les premières semaines de stage",
+      "Fléxibilité technique : web, IA (n8n, MCP), mobile (Flutter, Ionic), déploiement (Docker, Coolify), bases de données (SQL, NoSQL)",
+      "Capacité d'adaptation à plusieurs contextes différents: équipe étudiante, grand groupe bancaire, startup, agence digitale",
+      "Rester Focus  : toujours garder l'objectif de la mission en tête afin de satisfaire le client",
     ],
     vigilance: [
-      "Tendance à vouloir coder avant d'avoir suffisamment planifié — aller plus vite en allant plus lentement",
-      "Documentation et rapport : ne pas attendre la fin pour rédiger, commencer dès le premier jour",
-      "Ne pas sous-estimer la complexité des déploiements en production : chaque environnement a ses spécificités",
-      "Garder la communication proactive dans les équipes, ne pas attendre que les problèmes remontent seuls",
+      "Commencer à développer avant d'avoir suffisamment planifié. Cela donne une sensation de rapiditè mais c'eqst tous l'inverse",
+      "Rapport et documentation : ne pas attendre le milieu ou la fin pour rédiger proprement. Il faut débuter dès le premier jour",
+      "Ne pas sous-estimer la difficulté des déploiements en production : chaque environnement a ses particularités",
+      "Garder la communication dans les équipes, ne pas attendre que les problèmes me tombent dessus",
     ],
     pratiques: [
-      "Schémas et plans d'architecture avant chaque mission — visualiser avant d'écrire",
+      "Plans d'architecture et Schémas avant chaque mission. Il faut parfaitement visualiser avant d'écrire",
       "Toujours sauvegarder la BDD avant toute modification en production",
       "Vider le cache et vérifier le commit réellement déployé après chaque push",
-      "Documenter les choix techniques au fur et à mesure, pas à la fin",
-      "Tester en environnement de staging avant de toucher la production (clés Stripe test → live)",
+      "Documenter les choix techniques petit à petit",
+      "Tester en environnement de staging avant de toucher la production",
     ],
-    suite: "Ce BUT Informatique m'a donné une base technique solide et une vraie expérience professionnelle. La prochaine étape — le cycle ingénieur au Conservatoire national des arts et métiers en alternance — s'inscrit dans la continuité directe de ce parcours. L'objectif : aller plus loin dans la conception d'architectures logicielles complexes, développer la dimension management de projet, et me positionner progressivement comme lead technique puis chef de projet.",
+    suite: "Ce BUT Informatique m'a donné une base technique solide et une réelle expérience professionnelle. La prochaine étape pour moi c'est le cycle ingénieur au Conservatoire national des arts et métiers (CNAM) en alternance. Je l'ai choisi car c'est la suite logique après mon BUT. L'objectif est d'aller plus loin dans la conception d'architectures logicielles, développer la gestion de projet, et grimper les echellons. En effet à terme je souhaite devenir lead technique puis chef de projet.",
   },
 
   intro: [
-    "J'ai choisi l'informatique par élimination — non pas par défaut, mais parce que c'est le seul domaine qui a répondu à mes besoins sans jamais devenir une contrainte.",
-    "Cette liberté dans la discipline m'a rapidement orienté vers le développement fullstack. Pour moi, la vision d'ensemble prime sur tout. Un projet ne tient que si quelqu'un en comprend tous les maillons — du modèle de données à l'interface utilisateur. Le fullstack n'est pas une spécialité parmi d'autres : c'est une posture. Et cette posture mène naturellement vers le pilotage de projet.",
-    "C'est cette trajectoire qui m'a conduit vers le Conservatoire national des arts et métiers. Le programme cycle ingénieur m'est apparu comme la suite logique du BUT Informatique : les matières, les méthodes, l'exigence. Un prolongement naturel, pas un changement de cap.",
-    "Dans cinq ans, je me vois à la tête de plusieurs projets — aussi bien sur le plan technique qu'organisationnel. Développeur qui comprend les enjeux métier, et chef de projet qui comprend le code.",
+    "J'ai choisi l'informatique par élimination. Mais pas par défaut, parce que c'est le seul domaine qui a répondu à mes besoins sans jamais devenir une contrainte.",
+    "Ce cheminement m'a rapidement orienté vers le développement fullstack. Pour moi, la vision d'ensemble est plus importante que tout le reste. Un projet ne tient que si quelqu'un en comprend toutes les parties. Que cela soit le modèle de données ou l'interface utilisateur. Le fullstack n'est pas une spécialité parmi d'autres, c'est une manière de réfléchir. Et cette attitude mène naturellement vers la conduite de projet.",
+    "C'est cette manière de réfléchir qui m'a conduit vers le Conservatoire national des arts et métiers. Le programme cycle ingénieur m'est apparu comme la suite logique du BUT Informatique : les matières, les méthodes et l'exigence.",
+    "Dans cinq ans, je me vois à la tête de plusieurs projets. Aussi bien sur le plan technique qu'organisationnel. Je veux être le développeur qui comprend les enjeux métier, et chef de projet qui comprend le code.",
   ],
   bio: "Étudiant en 3ème année de BUT Informatique, passionné par le développement logiciel et la résolution de problèmes techniques complexes. Curieux, patient et doté d'un fort esprit d'équipe, je cherche à intégrer une entreprise ambitieuse pour mettre mes compétences au service de projets à fort impact.",
   location: "Colombes (92), France",
@@ -53,7 +53,7 @@ const DATA = {
       id: "01",
       title: "Simulation Uber Eats",
       description: "Plateforme de livraison temps réel. Architecture événementielle Redis Pub/Sub + MongoDB Change Streams.",
-      longDescription: "Simulation complète d'une plateforme de livraison à la demande, inspirée d'Uber Eats. Le projet met en œuvre une architecture distribuée et événementielle pour coordonner en temps réel un manager, des livreurs et des commandes.",
+      longDescription: "Simulation d'une plateforme de livraison à la demande, qui s'inspire d'Uber Eats. Le projet met en œuvre une architecture complexe pour coordonner en temps réel un manager, des commandes et des livreurs .",
       stack: ["Python", "Redis", "MongoDB"],
       year: "2024",
       type: "Projet 3ème année — Backend & Systèmes Distribués",
@@ -62,7 +62,8 @@ const DATA = {
         "Architecture événementielle : Redis Pub/Sub pour la communication instantanée Manager → Livreurs",
         "MongoDB Change Streams pour la persistance et le suivi des états en temps réel",
         "Simulation de plusieurs acteurs concurrents (manager, livreurs, commandes)",
-        "Gestion des états de commande : en attente, en cours, livré, annulé",
+        "Gestion des états de commande : en cours, en attente, livré, annulé",
+        "Ce projet m’a permis d’e travailler une qualité simple mais essentielle, la patience. En effet la coordination entre les différent acteurs à savoir les livreurs, les commandes et les clients. La difficulté à donc résidé dans la gestion des codes qui sont exécutés simultanément. La réalisation d’un plan clair était obligatoire pour aller dans la bonne direction.",
         // ➜ Complète ici : équipe, durée, ce que tu as appris, difficultés rencontrées
       ],
       competences: ["Réaliser", "Optimiser"],
@@ -73,14 +74,15 @@ const DATA = {
       description: "Recommandation de recettes hors-ligne avec gestion anti-gaspillage. Clean Architecture + Pattern Repository.",
       longDescription: "Application mobile cross-platform développée en Flutter, fonctionnant entièrement hors connexion. L'application recommande des recettes en fonction des ingrédients disponibles dans le frigo de l'utilisateur, avec un objectif anti-gaspillage.",
       stack: ["Flutter", "Dart", "SQLite"],
-      year: "2024",
+      year: "2025-2026",
       type: "Projet 3ème année — Mobile",
       link: "https://github.com/DevKosX/S501_Developpement.git",
       details: [
         "Architecture Clean Architecture avec Pattern Repository pour une séparation claire des couches",
         "Fonctionnement 100% hors-ligne grâce à SQLite (confidentialité des données garantie)",
         "Algorithme de recommandation croisant l'inventaire disponible et l'historique utilisateur",
-        "Interface Flutter responsive adaptée iOS et Android",
+        "Interface Flutter adaptée iOS et Android",
+        "Ce projet réaliser avec 5 de mes camarades m’a vraiment permis d’améliorer ma compétence de travail en équipe. En effet à certains moment on s’est retrouvé bloqué par manque de communication. Des tâches faites par la même personne ou mal exécutée car pas comprise. Nous avons donc réaliser des réunions et alimenter les logiciels de gestions de projet comme Jira afin que tous le monde aille dans la bonne direction et que le projet se mène à bien. De plus la partie optimisation s’est mal déroulée car la consigne a été mal interprété par l’ensemble de l’équipe. Nous en avons retenu qu’en cas de doute il faut toujours se référer au professeur qui dans le monde professionnel a son équivalent, le client ou le chef de projet.",
         // ➜ Complète ici : équipe, durée, difficultés, acquis
       ],
       competences: ["Réaliser", "Optimiser", "Gérer"],
@@ -99,6 +101,7 @@ const DATA = {
         "Système d'annotation obligatoire des émotions sur chaque message",
         "Persistance des données avec MySQL",
         "Travail en équipe avec répartition des rôles (back, front, BDD)",
+        "Ce projet réaliser avec 5 de mes camarades m’a vraiment permis d’améliorer ma compétence de travail en équipe. En effet à certains moment on s’est retrouvé bloqué par manque de communication. Des tâches faites par la même personne ou mal exécutée car pas comprise. Nous avons donc réaliser des réunions et alimenter les logiciels de gestions de projet comme Jira afin que tous le monde aille dans la bonne direction et que le projet se mène à bien. De plus il y’avait une nouvelle technologie qui a nécessité des recherches pour toutes l’équipe, les webSockets. Ce projet de dernière année qui a découlé sur le développement d’une application mobile montre vraiment le parcours réalisé. En effet nous sommes devenu de vrai développeur, capable de créer de la valeurs ajoutée. J’ai pris conscience que je pouvais aider les gens et je l’ai fais.En effet j’ai réalisé des sites pour mes proches qui les utilisent dans un cadre professionnel.",
         // ➜ Complète ici : taille équipe, durée, ton rôle précis, difficultés
       ],
       competences: ["Réaliser", "Collaborer", "Conduire"],
@@ -117,6 +120,7 @@ const DATA = {
         "Gestion robuste des erreurs avec try-catch (division par zéro, entrées invalides)",
         "Découverte des design patterns et de la structuration en classes",
         // ➜ Complète ici : ce que tu as appris, difficultés de débutant, évolution depuis
+        "Ce projet de première année a été pour moi une initiation développement informatique. Ce n’était pas le plus complexe que j’ai réalisé mais à mon sens l’un des plus compliqué. En effet venant d’un bac spécialité Mathématique et Science économiques et social l’informatique c’était nouveau pour moi. On peut dire que sa réalisation a déclenché une réaction chez moi. Ce projet réalisé en fin de première année avec un camarade m’a montré que j’ai acquis des compétences solide en développement. Il m’a aidé à prendre confiance et faire confiance aux autres.",
       ],
       competences: ["Réaliser"],
     },
@@ -135,6 +139,7 @@ const DATA = {
         "Gestion de la communication et des imprévus en temps réel",
         "Expérience de leadership dans un environnement sous pression",
         // ➜ Complète ici : combien de participants, ton rôle exact, bilan
+        "Durant les 24h de l’info je me suis chargé de guider les personnes au sein de l’IUT et gérer la coordination durant la nuit. En effet chaque personne avait un rôle, la journée ou la nuit et certains comme moi, les deux. Mais c’est vraiment la nuit qui m’a marqué. Je gérais le buffet et ça n’a Lair de rien comme ça mais nous faisions un peu office de soutiens pour les candidats qui venaient s’alimenter tout au long de la nuit. Ils nous parlaient de leurs problème, nous demandaient conseils. Etant donné que nous avions les compétences techniques pour comprendre de quoi est-ce-qu’ils parlaient ils se sentaient écouter. C’est là que j’ai compris qu’un bon chef de projet même si il ne code pas se doit de savoir comment ça fonctionne. Cet SAE m’a vraiment permis de travailler mon rapport d’interaction aux autres qui sera utile dans tout autre projet en équipe.",
       ],
       competences: ["Conduire", "Collaborer", "Gérer"],
     },
@@ -142,9 +147,9 @@ const DATA = {
       id: "06",
       title: "Portfolio Personnel",
       description: "Évolution de HTML/CSS pur vers React moderne avec animations et mode terminal.",
-      longDescription: "Conception et développement de mon portfolio personnel, évoluant d'une version statique HTML/CSS vers une application React moderne avec deux modes d'affichage : une vue éditoriale minimaliste et une vue terminal inspirée des éditeurs de code.",
+      longDescription: "Conception de mon portfolio personnel, évoluant d'une version statique HTML/CSS vers une application React moderne avec deux modes d'affichage. Il a une vue éditoriale minimaliste et une vue terminal inspirée des éditeurs de code.",
       stack: ["React", "CSS", "Space Grotesk", "JetBrains Mono"],
-      year: "2025",
+      year: "2024-2026",
       type: "Projet Personnel — Développement Web",
       link: "https://github.com/Cheick6/mon-portfolio.git",
       details: [
@@ -152,8 +157,8 @@ const DATA = {
         "Système de styles auto-injectés (CSS-in-JS sans dépendance externe)",
         "Animations CSS : fadeUp, blink, transitions hover",
         "Design responsive avec clamp() et grilles CSS adaptatives",
-        "Déploiement continu sur GitHub Pages",
-        // ➜ Complète ici : tes choix de design, ce que tu as appris
+        "Déploiement continu sur GitHub Pages. ",
+        "Ce projet a vraiment vu mon évolution en tant que dévelopeur. Au départ c’était un simple canva avec plusieurs pages qui exposaient mes réalisations . Ensuite j’en ai fait un site internet simple avec des infos qui étaient simplement affichées. Mais cela mettait déjà en lumière l’acquisition d’une certaine compétence technique.Et pour terminer la page que vous êtes actuellement entrain de lire. Elle possède un design simple mais que cela soit en terme de technique ou de contenu cela n’a plus rien avoir. Chaque détail a été réfléchis pour que le lecteur se sente à l’aise et ai envie de lire. Les pages ne sont pas surchargées mais possèdent des informations complètes. Ce portfolio m’a appris à synthétiser et exposer mon parcours. Je sais que cette compétence est aussi importante que la partie technique pour faire de moi un bon développeur."
       ],
       competences: ["Réaliser", "Conduire"],
     },
@@ -164,14 +169,14 @@ const DATA = {
       id: "01",
       title: "Réaliser un développement d'application",
       tagline: "Développer et adapter des solutions informatiques",
-      synthesis: "Réaliser demande avant tout une prise de recul. Avant d'écrire la première ligne de code, j'ai appris à analyser le problème, à questionner mes intuitions et à accepter l'autocritique. C'est cette posture réflexive — souvent inconfortable — qui permet de construire des solutions solides et évolutives plutôt que des réponses rapides mais fragiles.",
+      synthesis: "Réaliser demande avant tout une prise de recul. Avant d'écrire la première ligne de code, j'ai appris à analyser le problème, à questionner mes intuitions et à accepter l'autocritique. C'est cette posture de réflexion souvent inconfortable qui permet de construire des solutions solides et évolutives plutôt que des réponses rapides mais fragiles.",
       strengths: [
         "Analyse du besoin avant l'implémentation",
         "Maîtrise de la POO et des architectures structurées (Clean Architecture)",
         "Capacité à remettre en question ses choix techniques en cours de projet",
       ],
       vigilance: [
-        "Tendance naturelle à vouloir coder trop vite → apprendre à ralentir pour mieux avancer",
+        "Tendance naturelle à vouloir développer trop rapidement → apprendre à reculer pour mieux sauter",
         "Ne pas confondre complexité du code et qualité de la solution",
       ],
       saes: [
@@ -194,15 +199,14 @@ const DATA = {
       id: "02",
       title: "Optimiser des applications informatiques",
       tagline: "Proposer des applications informatiques optimisées",
-      synthesis: "L'optimisation est la compétence la plus exigeante intellectuellement. Elle nécessite de connaître le projet sur le bout des doigts : chaque décision a des effets en cascade sur les autres composants. J'ai compris qu'on n'optimise pas par intuition — on mesure d'abord, on comprend le goulot d'étranglement, puis on agit avec précision.",
+      synthesis: "L'optimisation est la compétence la plus exigeante. Elle nécessite de connaître le projet sur le bout des doigts. En effet chaque décision a des effets en cascade sur les autres composants. J'ai compris qu'on n'optimise pas par intuition on analyse d'abord, on comprend le goulot problème, puis on agit avec précision et précautions.",
       strengths: [
         "Choix technologiques justifiés : Redis Pub/Sub pour la latence, SQLite offline-first pour la performance mobile",
         "Algorithme de recommandation local croisant inventaire et historique sans appel réseau",
-        "Conscience du compromis performance / lisibilité du code",
       ],
       vigilance: [
         "Risque d'over-engineering : optimiser ce qui n'est pas encore un problème",
-        "Toujours mesurer les performances avant et après une modification",
+        "Toujours mesurer les performances avant et après une modification pour voir si il y'a eu un effet bénéfique",
       ],
       saes: [
         "S1.02 - Comparaison d'algo. · 1ère année (analyse et comparaison d'algorithmes de tri)",
@@ -220,14 +224,14 @@ const DATA = {
       id: "03",
       title: "Administrer des systèmes informatiques",
       tagline: "Déployer, configurer et maintenir l'infrastructure",
-      synthesis: "L'administration, ce sont les fondations invisibles sur lesquelles tout repose. Une erreur de configuration en amont peut compromettre l'ensemble d'un projet. Cette compétence m'a appris la rigueur : chaque paramètre a une raison d'être, chaque environnement doit être documenté. Quand l'administration est bien faite, personne ne la remarque — et c'est exactement l'objectif.",
+      synthesis: "L'administration, ce sont les bases invisibles sur lesquelles tout repose. Une erreur de configuration en amont peut compromettre tout un projet. Cette compétence m'a appris la rigueur. En effet chaque paramètre a une raison d'être, chaque environnement doit être documenté. Quand l'administration est bien faite, personne ne la remarque et c'est ça l'objectif.",
       strengths: [
-        "Utilisation rigoureuse de Git / GitHub (branches, commits lisibles)",
+        "Utilisation de Git / GitHub (branches, commits lisibles)",
         "Initiation à Docker pour l'isolation des environnements",
         "Participation à l'architecture logicielle lors des stages en entreprise",
       ],
       vigilance: [
-        "Pas de place à l'approximation : un oubli de configuration peut bloquer toute une équipe",
+        "Pas de place à l'approximation. Un oubli de configuration peut bloquer toute une équipe",
         "Documenter systématiquement les choix d'infrastructure pour les autres",
       ],
       saes: [
@@ -247,15 +251,15 @@ const DATA = {
       id: "04",
       title: "Gérer des données de l'information",
       tagline: "Concevoir, exploiter et administrer les données",
-      synthesis: "La gestion des données est la compétence que j'ai le plus appréciée. Modéliser une base, respecter les contraintes d'intégrité, optimiser les requêtes : c'est à la fois rigoureux et créatif. Mais la donnée est aussi précieuse et fragile — une manipulation hasardeuse peut être irréversible, en particulier en production.",
+      synthesis: "La gestion des données est la compétence que j'ai le plus appréciée. Modéliser une base, respecter les contraintes d'intégrité, optimiser les requêtes. Mais la donnée est aussi précieuse et fragile. Une manipulation hasardeuse peut être irréversible, en particulier en production.",
       strengths: [
         "Pratique variée : MongoDB, Redis, SQL/SQLite, Firebase/Firestore",
         "Conscience des contraintes d'intégrité et des relations entre entités",
         "Nettoyage et optimisation d'une BDD réelle en production (stage J'Origine)",
       ],
       vigilance: [
-        "Manipuler les données de production avec rigueur : toujours sauvegarder avant de modifier",
-        "Respecter les contraintes métier au-delà des contraintes purement techniques",
+        "Manipuler les données de production avec rigueur. Il faut toujours sauvegarder avant de modifier",
+        "Respecter les contraintes métier au-delà des contraintes techniques",
       ],
       saes: [
         "S1.04 - Création BD · 1ère année (modélisation et création d'une base de données relationnelle)",
@@ -274,14 +278,14 @@ const DATA = {
       id: "05",
       title: "Conduire un projet",
       tagline: "Piloter un projet et satisfaire les besoins utilisateurs",
-      synthesis: "Conduire un projet est une source de fierté immense — et une école de maturité. Organiser, planifier, prendre des décisions : c'est stimulant et constructif. Mais la réussite d'un projet ne tient pas qu'à la technique. Elle dépend de la capacité à sentir le ressenti de chaque membre, à détecter les tensions avant qu'elles ne deviennent des blocages, et à maintenir la cohésion.",
+      synthesis: "Conduire un projet est une source de fierté immense. Organiser, planifier, prendre des décisions pour moi c'est stimulant et constructif. Mais la réussite d'un projet ne tient pas qu'à la technique. Elle dépend de la capacité à sentir le ressenti de chaque membre. Mais aussi à détecter les tensions avant qu'elles ne deviennent des blocages, et à maintenir la cohésion.",
       strengths: [
-        "Co-organisation des 24H de l'Info : coordination logistique d'un hackathon sous pression",
+        "Co-organisation des 24H de l'Info : coordination logistique d'un hackathon",
         "Sens de l'initiative et capacité à prendre des décisions rapides",
-        "Orientation utilisateur : garder le besoin réel au centre des décisions techniques",
+        "Orientation utilisateur, garder le besoin réel au centre des décisions techniques",
       ],
       vigilance: [
-        "Ne jamais sacrifier l'humain à l'efficacité : un projet techniquement réussi mais humainement raté est un échec",
+        "Ne jamais sacrifier l'humain à l'efficacité, un projet techniquement réussi mais humainement raté est un échec",
         "Prendre en compte le ressenti de chaque membre, même les plus silencieux",
       ],
       saes: [
@@ -302,15 +306,15 @@ const DATA = {
       id: "06",
       title: "Travailler dans une équipe informatique",
       tagline: "Travailler en équipe et s'intégrer dans une organisation",
-      synthesis: "La collaboration a traversé presque tous mes projets et mes stages. Travailler en équipe permet d'aller plus loin, plus vite — mais elle peut aussi créer des blocages durables en cas de désaccord. J'ai appris que l'agilité n'est pas qu'une méthode : c'est une posture. Accepter que la meilleure idée ne vienne pas toujours de soi, être compréhensif face au changement.",
+      synthesis: "La collaboration a traversé presque tous mes projets et mes stages. Travailler en équipe permet d'aller plus loin, plus vite. Mais cela peut aussi créer des blocages en cas de désaccord. J'ai appris que l'agilité n'est pas qu'une méthode, c'est une posture. Accepter que la meilleure idée ne vienne pas toujours de soi, être compréhensif face au changement.",
       strengths: [
         "Collaboration efficace sur PingMe, 24H de l'Info et les deux stages en entreprise",
         "Pratique des outils collaboratifs : Slack, Jira, Confluence, Zoom, GitHub",
         "Capacité d'adaptation à différents contextes (équipe étudiante, startup, grand groupe)",
       ],
       vigilance: [
-        "Les désaccords peuvent paralyser — savoir écouter, comprendre et trancher avec tact",
-        "Communiquer proactivement plutôt qu'attendre que les problèmes remontent",
+        "Les désaccords peuvent paralyser. Il faut savoir écouter, comprendre et trancher avec tact",
+        "Communiquer dès le départ plutôt qu'attendre que les problèmes remontent",
       ],
       saes: [
         "S1.06 - Environnement éco. · 1ère année (travail écrit + capsule vidéo)",
@@ -387,8 +391,8 @@ const DATA = {
       ],
       bilan: {
         surprises: [
-          "Une vraie autonomie dès le début — on me faisait confiance sur des missions en production",
-          "Ambiance d'équipe excellente : afterwork sushis, soirée boxe, intervention d'avocates sur les conflits entre associés — une culture d'entreprise réelle, pas juste du télétravail",
+          "Une vraie autonomie dès le début. On me faisait confiance sur des missions en production",
+          "Ambiance d'équipe excellente : afterwork sushis et intervention d'avocates sur les conflits entre associés, une culture d'entreprise réelle, pas juste du télétravail",
         ],
         problemes: [
           "Déploiement Coolify : les changements n'apparaissaient pas toujours immédiatement après un push → appris à vérifier le commit réellement déployé via git log dans le container et à vider le cache Symfony",
@@ -398,7 +402,7 @@ const DATA = {
           "Accès FTP Cosmilab bloqué → whitelist IP nécessaire auprès du service informatique client",
         ],
         different: [
-          "Le rapport et la soutenance : je ne savais pas qu'ils devaient être rendus pendant le stage — j'aurais commencé à rédiger dès la première semaine",
+          "Le rapport et la soutenance. Je ne savais pas qu'ils devaient être rendus pendant le stage, je me serais organisé différemment",
           "Faire des schémas et plans détaillés avant de démarrer chaque mission pour mieux visualiser l'architecture avant d'écrire du code",
         ],
         siCetaitARefaire: "Je referais ce stage sans hésiter. La diversité des missions (internationalisation, IA, mobile, BDD, déploiement) m'a exposé à presque tous les aspects du développement full stack professionnel. Je gérerais mieux la documentation dès le premier jour et je prendrais plus de recul avant chaque mission pour planifier plutôt que de foncer.",
