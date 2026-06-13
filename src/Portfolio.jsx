@@ -446,7 +446,7 @@ const DATA = {
 const GlobalStyles = () => (
   <style>{`
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { overflow-x: hidden; }
+    html, body { overflow-x: hidden; }
 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
@@ -721,6 +721,9 @@ const GlobalStyles = () => (
       .m-proj-meta { display: none; }
       .pf-toggle { top: 12px; right: 12px; padding: 9px 14px; font-size: 12px; }
       .pf-cv-btn { top: 12px; left: 12px; padding: 9px 14px; font-size: 12px; }
+      .ph-strip { margin-left: -5vw; margin-right: -5vw; padding-left: 5vw; padding-right: 5vw; }
+      .ph-caption { flex-direction: column; gap: 8px; }
+      .ph-tag { white-space: normal; }
     }
   `}</style>
 );
