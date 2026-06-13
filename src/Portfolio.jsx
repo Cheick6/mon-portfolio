@@ -54,7 +54,7 @@ const DATA = {
       title: "Simulation Uber Eats",
       description: "Plateforme de livraison temps réel. Architecture événementielle Redis Pub/Sub + MongoDB Change Streams.",
       longDescription: "Simulation d'une plateforme de livraison à la demande, qui s'inspire d'Uber Eats. Le projet met en œuvre une architecture complexe pour coordonner en temps réel un manager, des commandes et des livreurs .",
-      stack: ["Python", "Redis", "MongoDB"],
+      stack: ["Python", "Redis", "MongoDB", "Git"],
       year: "2024",
       type: "Projet 3ème année — Backend & Systèmes Distribués",
       link: "https://github.com/Cheick6/mongoDB.git",
@@ -73,7 +73,7 @@ const DATA = {
       title: "App Mobile Cuisine & Frigo",
       description: "Recommandation de recettes hors-ligne avec gestion anti-gaspillage. Clean Architecture + Pattern Repository.",
       longDescription: "Application mobile cross-platform développée en Flutter, fonctionnant entièrement hors connexion. L'application recommande des recettes en fonction des ingrédients disponibles dans le frigo de l'utilisateur, avec un objectif anti-gaspillage.",
-      stack: ["Flutter", "Dart", "SQLite"],
+      stack: ["Flutter", "Dart", "SQLite", "Clean Architecture", "Agile", "Git"],
       year: "2025-2026",
       type: "Projet 3ème année — Mobile",
       link: "https://github.com/DevKosX/S501_Developpement.git",
@@ -92,7 +92,7 @@ const DATA = {
       title: "PingMe",
       description: "Messagerie instantanée dyadique pour service client avec annotation d'émotions. WebSockets temps réel.",
       longDescription: "Application de messagerie instantanée développée en équipe, orientée service client. Chaque message peut être annoté d'une émotion, permettant au service client d'analyser le ressenti des utilisateurs en temps réel.",
-      stack: ["Java", "WebSocket", "MySQL"],
+      stack: ["Java", "WebSocket", "MySQL", "Git"],
       year: "2023",
       type: "Projet de Groupe — 2ème année",
       link: "https://github.com/Cheick6/SAE_S1.git",
@@ -111,7 +111,7 @@ const DATA = {
       title: "Calculatrice Java",
       description: "Programme console avec les 4 opérations arithmétiques. POO complète : héritage, polymorphisme.",
       longDescription: "Premier projet Java significatif, réalisé en binôme en 1ère année. L'objectif était de maîtriser les fondamentaux de la Programmation Orientée Objet à travers un cas concret.",
-      stack: ["Java", "POO"],
+      stack: ["Java", "POO", "Git"],
       year: "2022",
       type: "Projet Binôme — 1ère année",
       link: "https://github.com/Cheick6/java_calculatrice-.git",
@@ -129,7 +129,7 @@ const DATA = {
       title: "24H de l'Info",
       description: "Coordination d'un hackathon national. Gestion logistique, communication et leadership.",
       longDescription: "Co-organisation d'un hackathon étudiant de 24 heures à l'IUT de Villetaneuse. Rôle clé dans la coordination logistique, la communication avec les équipes participantes et la gestion des ressources pendant l'événement.",
-      stack: ["Leadership", "Logistique", "Communication"],
+      stack: ["Leadership", "Logistique", "Communication", "HTML5", "Git"],
       year: "2024",
       type: "Hackathon / Événementiel",
       link: process.env.PUBLIC_URL + "/24h_Info-main/index.html",
@@ -148,7 +148,7 @@ const DATA = {
       title: "Portfolio Personnel",
       description: "Évolution de HTML/CSS pur vers React moderne avec animations et mode terminal.",
       longDescription: "Conception de mon portfolio personnel, évoluant d'une version statique HTML/CSS vers une application React moderne avec deux modes d'affichage. Il a une vue éditoriale minimaliste et une vue terminal inspirée des éditeurs de code.",
-      stack: ["React", "CSS", "Space Grotesk", "JetBrains Mono"],
+      stack: ["React.js", "CSS3", "JavaScript", "HTML5", "Git"],
       year: "2024-2026",
       type: "Projet Personnel — Développement Web",
       link: "https://github.com/Cheick6/mon-portfolio.git",
@@ -379,6 +379,7 @@ const DATA = {
         "Utilisation du MCP data.gouv.fr pour interroger les données publiques françaises via l'IA",
         "Stack transverse : Windsurf (IA intégrée) · GitLab · monday.com · Coolify (hébergement VPS auto-hébergé)",
       ],
+      stack: ["PHP", "Symfony", "Angular", "API Platform", "Docker", "SQL", "Git"],
       competencesBut: [
         {
           mission: "Mission 1 — Cosmilab",
@@ -415,6 +416,7 @@ const DATA = {
       location: "Choisy-le-Roi",
       period: "Févr. 2025 — Avr. 2025",
       description: "Première immersion professionnelle dans un environnement de startup moderne.",
+      stack: ["Node.js", "Firebase", "Agile", "Git"],
       details: [
         "Génération automatisée de rapports DOCX via extraction de données Firebase en Node.js",
         "Nettoyage, restructuration et optimisation de la base de données Firebase/Firestore",
@@ -809,7 +811,14 @@ const MonoView = ({ data, onExpClick, onProjectClick, onCompClick }) => {
   const [selectedStack, setSelectedStack] = useState(null);
 
   const stackProjects = selectedStack
-    ? data.projects.filter(p => p.stack.some(t => t.toLowerCase() === selectedStack.toLowerCase()))
+    ? [
+        ...data.projects
+          .filter(p => p.stack && p.stack.some(t => t.toLowerCase() === selectedStack.toLowerCase()))
+          .map(p => ({ title: p.title, click: () => { setSelectedStack(null); onProjectClick(p); } })),
+        ...(data.experiences || [])
+          .filter(e => e.stack && e.stack.some(t => t.toLowerCase() === selectedStack.toLowerCase()))
+          .map(e => ({ title: `Stage — ${e.company}`, click: () => { setSelectedStack(null); onExpClick(e); } })),
+      ]
     : [];
 
   return (
@@ -1026,10 +1035,10 @@ const MonoView = ({ data, onExpClick, onProjectClick, onCompClick }) => {
             <>
               <p className="sk-sub">Projets mobilisant cette compétence</p>
               <ul className="sk-list">
-                {stackProjects.map(p => (
-                  <li key={p.title} className="sk-item" onClick={() => { setSelectedStack(null); onProjectClick(p); }}>
+                {stackProjects.map(item => (
+                  <li key={item.title} className="sk-item" onClick={item.click}>
                     <span className="sk-arrow">→</span>
-                    <span>{p.title}</span>
+                    <span>{item.title}</span>
                   </li>
                 ))}
               </ul>
