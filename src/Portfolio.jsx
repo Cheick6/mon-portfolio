@@ -515,6 +515,21 @@ const GlobalStyles = () => (
     .m-ccl-label { font-family:'JetBrains Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.12em; color:#8a8578; margin-bottom:14px; }
     .m-ccl-pills { display:flex; flex-wrap:wrap; gap:8px; }
     .m-ccl-pill  { font-family:'JetBrains Mono',monospace; font-size:11px; padding:5px 12px; border-radius:4px; background:#f7f6f2; color:#3a382f; border:1px solid #ddd8cb; }
+    .m-pill-btn  { cursor:pointer; transition:background .15s, border-color .15s, color .15s; }
+    .m-pill-btn:hover { background:#16150f; color:#f7f6f2; border-color:#16150f; }
+    .sk-overlay  { position:fixed; inset:0; background:rgba(22,21,15,.55); backdrop-filter:blur(4px); z-index:200; display:flex; align-items:center; justify-content:center; padding:20px; }
+    .sk-modal    { background:#f7f6f2; border-radius:16px; padding:36px; max-width:420px; width:100%; position:relative; box-shadow:0 24px 64px rgba(0,0,0,.18); }
+    .sk-close    { position:absolute; top:16px; right:16px; background:none; border:1px solid #ddd8cb; border-radius:999px; padding:4px 12px; font-size:12px; cursor:pointer; color:#7a7568; font-family:'JetBrains Mono',monospace; transition:background .2s,color .2s; }
+    .sk-close:hover { background:#16150f; color:#f7f6f2; border-color:#16150f; }
+    .sk-label    { font-family:'JetBrains Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.12em; color:#8a8578; margin-bottom:8px; }
+    .sk-tech     { font-size:28px; font-weight:600; letter-spacing:-.02em; color:#16150f; margin-bottom:24px; }
+    .sk-sub      { font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:#8a8578; margin-bottom:14px; }
+    .sk-list     { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .sk-item     { display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:8px; border:1px solid #e4dfd2; cursor:pointer; transition:background .15s, border-color .15s; font-size:14px; color:#16150f; }
+    .sk-item:hover { background:#16150f; color:#f7f6f2; border-color:#16150f; }
+    .sk-item:hover .sk-arrow { color:#f7f6f2; }
+    .sk-arrow    { font-family:'JetBrains Mono',monospace; color:#8a8578; font-size:12px; transition:color .15s; }
+    .sk-empty    { font-size:14px; color:#8a8578; font-style:italic; }
     .m-ccl-suite { font-size:clamp(15px,1.5vw,17px); color:#3a382f; line-height:1.85; border-left:3px solid #3fae6b; padding-left:20px; }
     @media(max-width:720px){ .m-ccl-grid{ grid-template-columns:1fr; } }
 
@@ -786,7 +801,15 @@ const Portfolio = () => {
 // ============================================================
 // VUE MONO — éditoriale, claire
 // ============================================================
-const MonoView = ({ data, onExpClick, onProjectClick, onCompClick }) => (
+const MonoView = ({ data, onExpClick, onProjectClick, onCompClick }) => {
+  const [selectedStack, setSelectedStack] = useState(null);
+
+  const stackProjects = selectedStack
+    ? data.projects.filter(p => p.stack.some(t => t.toLowerCase() === selectedStack.toLowerCase()))
+    : [];
+
+  return (
+  <>
   <div className="m-root">
     <div className="m-wrap">
 
@@ -896,7 +919,15 @@ const MonoView = ({ data, onExpClick, onProjectClick, onCompClick }) => (
           <div>
             <p className="m-col-label">— Stack technique</p>
             <div className="m-pills">
-              {data.stack.map(s => <span key={s} className="m-pill">{s}</span>)}
+              {data.stack.map(s => (
+                <span
+                  key={s}
+                  className="m-pill m-pill-btn"
+                  onClick={() => setSelectedStack(s)}
+                  role="button"
+                  title={`Voir les projets utilisant ${s}`}
+                >{s}</span>
+              ))}
             </div>
           </div>
           <div>
@@ -981,7 +1012,33 @@ const MonoView = ({ data, onExpClick, onProjectClick, onCompClick }) => (
 
     </div>
   </div>
-);
+    {selectedStack && (
+      <div className="sk-overlay" onClick={() => setSelectedStack(null)}>
+        <div className="sk-modal" onClick={e => e.stopPropagation()}>
+          <button className="sk-close" onClick={() => setSelectedStack(null)}>✕</button>
+          <p className="sk-label">— Stack technique</p>
+          <h3 className="sk-tech">{selectedStack}</h3>
+          {stackProjects.length > 0 ? (
+            <>
+              <p className="sk-sub">Projets mobilisant cette compétence</p>
+              <ul className="sk-list">
+                {stackProjects.map(p => (
+                  <li key={p.title} className="sk-item" onClick={() => { setSelectedStack(null); onProjectClick(p); }}>
+                    <span className="sk-arrow">→</span>
+                    <span>{p.title}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="sk-empty">Aucun projet répertorié pour cette technologie.</p>
+          )}
+        </div>
+      </div>
+    )}
+  </>
+  );
+};
 
 // ============================================================
 // VUE TERMINAL — fenêtre éditeur de code
