@@ -39,7 +39,7 @@ const DATA = {
     "J'ai choisi l'informatique par élimination. Mais pas par défaut, parce que c'est le seul domaine qui a répondu à mes besoins sans jamais devenir une contrainte.",
     "Ce cheminement m'a rapidement orienté vers le développement fullstack. Pour moi, la vision d'ensemble est plus importante que tout le reste. Un projet ne tient que si quelqu'un en comprend toutes les parties. Que cela soit le modèle de données ou l'interface utilisateur. Le fullstack n'est pas une spécialité parmi d'autres, c'est une manière de réfléchir. Et cette attitude mène naturellement vers la conduite de projet.",
     "C'est cette manière de réfléchir qui m'a conduit vers le Conservatoire national des arts et métiers. Le programme cycle ingénieur m'est apparu comme la suite logique du BUT Informatique : les matières, les méthodes et l'exigence.",
-    "Dans cinq ans, je me vois à la tête de plusieurs projets. Aussi bien sur le plan technique qu'organisationnel. Je veux être le développeur qui comprend les enjeux métier, et chef de projet qui comprend le code.",
+    "Dans cinq ans, je me vois à la tête de plusieurs projets. Aussi bien sur le plan technique qu'organisationnel. Je veux être le développeur qui comprend les enjeux métier, et le chef de projet qui comprend le code.",
   ],
   bio: "Étudiant en 3ème année de BUT Informatique, passionné par le développement logiciel et la résolution de problèmes techniques complexes. Curieux, patient et doté d'un fort esprit d'équipe, je cherche à intégrer une entreprise ambitieuse pour mettre mes compétences au service de projets à fort impact.",
   location: "Colombes (92), France",
