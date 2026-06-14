@@ -55,7 +55,7 @@ const DATA = {
       description: "Plateforme de livraison temps réel. Architecture événementielle Redis Pub/Sub + MongoDB Change Streams.",
       longDescription: "Simulation d'une plateforme de livraison à la demande, qui s'inspire d'Uber Eats. Le projet met en œuvre une architecture complexe pour coordonner en temps réel un manager, des commandes et des livreurs .",
       stack: ["Python", "Redis", "MongoDB", "Git"],
-      year: "2024",
+      year: "2025",
       type: "Projet 3ème année — Backend & Systèmes Distribués",
       link: "https://github.com/Cheick6/mongoDB.git",
       details: [
