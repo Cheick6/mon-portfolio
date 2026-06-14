@@ -82,7 +82,7 @@ const DATA = {
         "Fonctionnement 100% hors-ligne grâce à SQLite (confidentialité des données garantie)",
         "Algorithme de recommandation croisant l'inventaire disponible et l'historique utilisateur",
         "Interface Flutter adaptée iOS et Android",
-        "Ce projet réaliser avec 5 de mes camarades m’a vraiment permis d’améliorer ma compétence de travail en équipe. En effet à certains moment on s’est retrouvé bloqué par manque de communication. Des tâches faites par la même personne ou mal exécutée car pas comprise. Nous avons donc réaliser des réunions et alimenter les logiciels de gestions de projet comme Jira afin que tous le monde aille dans la bonne direction et que le projet se mène à bien. De plus la partie optimisation s’est mal déroulée car la consigne a été mal interprété par l’ensemble de l’équipe. Nous en avons retenu qu’en cas de doute il faut toujours se référer au professeur qui dans le monde professionnel a son équivalent, le client ou le chef de projet.",
+        "Ce projet réalisé avec 5 de mes camarades m’a vraiment permis d’améliorer ma compétence de travail en équipe. En effet à certains moment on s’est retrouvé bloqué par manque de communication. Des tâches faites par la même personne ou mal exécutée car pas comprise. Nous avons donc réaliser des réunions et alimenter les logiciels de gestions de projet comme Jira afin que tous le monde aille dans la bonne direction et que le projet se mène à bien. De plus la partie optimisation s’est mal déroulée car la consigne a été mal interprété par l’ensemble de l’équipe. Nous en avons retenu qu’en cas de doute il faut toujours se référer au professeur qui dans le monde professionnel a son équivalent, le client ou le chef de projet.",
         // ➜ Complète ici : équipe, durée, difficultés, acquis
       ],
       competences: ["Réaliser", "Optimiser", "Gérer"],
@@ -158,7 +158,7 @@ const DATA = {
         "Animations CSS : fadeUp, blink, transitions hover",
         "Design responsive avec clamp() et grilles CSS adaptatives",
         "Déploiement continu sur GitHub Pages. ",
-        "Ce projet a vraiment vu mon évolution en tant que dévelopeur. Au départ c’était un simple canva avec plusieurs pages qui exposaient mes réalisations . Ensuite j’en ai fait un site internet simple avec des infos qui étaient simplement affichées. Mais cela mettait déjà en lumière l’acquisition d’une certaine compétence technique.Et pour terminer la page que vous êtes actuellement entrain de lire. Elle possède un design simple mais que cela soit en terme de technique ou de contenu cela n’a plus rien avoir. Chaque détail a été réfléchis pour que le lecteur se sente à l’aise et ai envie de lire. Les pages ne sont pas surchargées mais possèdent des informations complètes. Ce portfolio m’a appris à synthétiser et exposer mon parcours. Je sais que cette compétence est aussi importante que la partie technique pour faire de moi un bon développeur."
+        "Ce projet a vraiment vu mon évolution en tant que développeur. Au départ c’était un simple canva avec plusieurs pages qui exposaient mes réalisations . Ensuite j’en ai fait un site internet simple avec des infos qui étaient simplement affichées. Mais cela mettait déjà en lumière l’acquisition d’une certaine compétence technique.Et pour terminer la page que vous êtes actuellement entrain de lire. Elle possède un design simple mais que cela soit en terme de technique ou de contenu cela n’a plus rien avoir. Chaque détail a été réfléchis pour que le lecteur se sente à l’aise et ai envie de lire. Les pages ne sont pas surchargées mais possèdent des informations complètes. Ce portfolio m’a appris à synthétiser et exposer mon parcours. Je sais que cette compétence est aussi importante que la partie technique pour faire de moi un bon développeur."
       ],
       competences: ["Réaliser", "Conduire"],
     },
@@ -199,7 +199,7 @@ const DATA = {
       id: "02",
       title: "Optimiser des applications informatiques",
       tagline: "Proposer des applications informatiques optimisées",
-      synthesis: "L'optimisation est la compétence la plus exigeante. Elle nécessite de connaître le projet sur le bout des doigts. En effet chaque décision a des effets en cascade sur les autres composants. J'ai compris qu'on n'optimise pas par intuition on analyse d'abord, on comprend le goulot problème, puis on agit avec précision et précautions.",
+      synthesis: "L'optimisation est la compétence la plus exigeante. Elle nécessite de connaître le projet sur le bout des doigts. En effet chaque décision a des effets en cascade sur les autres composants. J'ai compris qu'on n'optimise pas par intuition on analyse d'abord.On doit comprendre le problème puis on agir avec précision et précautions.",
       strengths: [
         "Choix technologiques justifiés : Redis Pub/Sub pour la latence, SQLite offline-first pour la performance mobile",
         "Algorithme de recommandation local croisant inventaire et historique sans appel réseau",
